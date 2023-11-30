@@ -1,0 +1,289 @@
+/* Configuración global para todos los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Configuración para permitir un desplazamiento suave en la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #eae6df;
+}
+
+/* Estilos para títulos de diferentes niveles */
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+/* Estilos para párrafos */
+p {
+    font-size: 1em;
+}
+
+/* Estilos para botones */
+.btn {
+    background: #b8926a;
+    display: initial;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 100px;
+}
+
+/* Estilos para contenedores con ancho máximo y centrado */
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Estilos para la barra de navegación */
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #b8926a;
+    font-size: 1.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #b8926a;
+}
+
+/* Estilos para la sección de héroe (página de inicio) */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 85vh;
+    color: #b8926a;
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+#hero h1 {
+    color: #b8926a;
+}
+
+/* Estilos para la sección de nuestros servicios */
+#nuestros_servicios {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros_servicios .container {
+    padding: 100px 0px;
+}
+
+#nuestros_servicios h2 {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#nuestros_servicios p {
+    display: none;
+}
+
+#nuestros_servicios .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* Estilos para cartas individuales en la sección de servicios */
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("C:/Users/Misae/OneDrive/Páginas Web/Piktorica/Piktorica_Web v2.0/IMG/P1.png");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("C:/Users/Misae/OneDrive/Páginas Web/Piktorica/Piktorica_Web v2.0/IMG/P8.png");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("C:/Users/Misae/OneDrive/Páginas Web/Piktorica/Piktorica_Web v2.0/IMG/P17.png");
+}
+
+/* Estilos para la sección de quiénes somos */
+#somos .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#somos h2 {
+    margin-top: 0px;
+}
+
+/* Estilos para la sección de contacto */
+#contacto .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 70vh;
+}
+
+#contacto h2 {
+    font-size: 9vw;
+}
+
+#contacto button {
+    font-size: 5vw;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Estilos responsivos para pantallas con un ancho mínimo de 720px */
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #somos .texto {
+        width: 50%;
+        max-width: 600px;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos h2 {
+        margin-top: 0px;
+    }
+
+    #somos p {
+        font-size: 20px;
+    }
+
+    #nuestros_servicios .servicios {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros_servicios p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros_servicios h3 {
+        margin-top: 0;
+    }
+
+    #nuestros_servicios .carta {
+        padding: 50px;
+        background-size: 100% 350px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50);
+        box-shadow: 2px 2px 10px rgba(50, 50, 50, 1);
+    }
+
+    #contacto h2 {
+        font-size: 5em;
+    }
+
+    #contacto .redes {
+        padding: 50px;
+        margin: 20px;
+        position: relative;
+        bottom: 75px;
+    }
+
+    #contacto .instagram {
+        display: inline-block;
+    }
+
+    #footer .container {
+        justify-content: flex-end;
+    }
+}
